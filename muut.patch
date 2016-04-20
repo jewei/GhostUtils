@@ -1,0 +1,28 @@
+diff --git a/var/www/ghost/content/themes/casper/default.hbs b/var/www/ghost/content/themes/casper/default.hbs
+index b2b231f..006d2f6 100644
+--- a/default.hbs
++++ b/default.hbs
+@@ -45,6 +45,7 @@
+     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
+     {{! The main JavaScript file for Casper }}
+     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
++    <script src="//cdn.muut.com/1/moot.min.js"></script>
+
+ </body>
+ </html>
+diff --git a/var/www/ghost/content/themes/casper/post.hbs b/var/www/ghost/content/themes/casper/post.hbs
+index 0720561..3c7e179 100644
+--- a/post.hbs
++++ b/post.hbs
+@@ -74,6 +74,12 @@
+
+         </footer>
+
++        <hr />
++        <section class="post-comment">
++            <h2>Comments</h2>
++            <a class="muut" href="https://muut.com/i/jewei-com/comments" type="dynamic">jewei-com</a>
++        </section>
++
+     </article>
+ </main>
