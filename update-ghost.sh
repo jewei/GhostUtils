@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # Written by Jewei Mak <jewei.mak@gmail.com> for Digital Ocean Ghost (one-click-install) to the latest version.
 
 # Stop Ghost.
@@ -33,12 +32,14 @@ yes | cp -R /var/www/ghost/content/themes/casper /var/www/ghost/content/themes
 # Delete temp folder.
 rm -rf /var/www/ghost/ghost-temp /var/www/ghost/latest.zip
 
-# Set permissions.
-chown -R ghost:ghost /var/www/ghost
-
 # Upgrade dependencies:
 npm install --production
 
+# Set permissions.
+chown -R ghost:ghost /var/www/ghost
+
 # Start Ghost.
-service restart ghost
-echo "Ghost started."
+service ghost start
+
+# Print friendly message :)
+echo "Ghost updated."
