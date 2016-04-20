@@ -7,5 +7,5 @@ For once-click-install Ghost on Digital Ocean.
 3. Profit!
 
 ```
-wget -O - https://raw.githubusercontent.com/jewei/Ghost/master/update-ghost.sh | sudo bash
+wget -O - https://raw.githubusercontent.com/jewei/GhostUtils/master/update-ghost.sh | sudo bash
 ```
