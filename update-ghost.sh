@@ -33,7 +33,7 @@ yes | cp -R /var/www/ghost/ghost-temp/content/themes/casper /var/www/ghost/conte
 rm -rf /var/www/ghost/ghost-temp /var/www/ghost/latest.zip
 
 # Upgrade dependencies:
-npm install --production
+npm install --production --unsafe-perm
 
 # Set permissions.
 chown -R ghost:ghost /var/www/ghost
