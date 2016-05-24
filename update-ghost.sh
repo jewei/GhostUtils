@@ -27,7 +27,7 @@ yes | cp -R /var/www/ghost/ghost-temp/core /var/www/ghost
 yes | cp /var/www/ghost/ghost-temp/*.js /var/www/ghost
 yes | cp /var/www/ghost/ghost-temp/*.json /var/www/ghost
 yes | cp /var/www/ghost/ghost-temp/*.md /var/www/ghost
-yes | cp -R /var/www/ghost/content/themes/casper /var/www/ghost/content/themes
+yes | cp -R /var/www/ghost/ghost-temp/content/themes/casper /var/www/ghost/content/themes
 
 # Delete temp folder.
 rm -rf /var/www/ghost/ghost-temp /var/www/ghost/latest.zip
